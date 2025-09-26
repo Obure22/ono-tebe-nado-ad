@@ -15,8 +15,6 @@
   font-weight: 400;
 }
 
-
-
 .header__links-list-item_no-bullit {
   list-style: none;
 }
@@ -26,7 +24,6 @@
 }
 
 .header__link_active {
-  text-decoration: none;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -37,8 +34,6 @@
   width: 136px;
 }
 
-
-
 .address {
   font-style: normal;
   max-width: 240px;
@@ -46,8 +41,6 @@
   line-height: 24.3px;
   font-size: 18px;
 }
-
-
 
 .header__address {
   margin-right: 35px;
@@ -84,8 +77,6 @@
 .letter-spacing-extended {
   letter-spacing: 0.3em;
 }
-
-
 
 .aligned-text {
   display: block;
@@ -243,7 +234,6 @@
   grid-template-columns: 334px 1fr;
 }
 
-
 .about__logo {
   border-radius: 50%;
   background: #000;
@@ -321,8 +311,6 @@
   justify-content: end;
   gap: 48px;
 }
-
-
 
 .footer__social-icon {
   height: 48px;
