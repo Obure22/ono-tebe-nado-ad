@@ -1,1 +1,362 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  height: 293px;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header__links-list-item {
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.header__logo {
+  display: block;
+  width: 136px;
+}
+
+.header__logo-image {
+}
+
+.address {
+  font-style: normal;
+  max-width: 240px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-size: 18px;
+}
+
+.header__address__underscore {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.header__address {
+  margin-right: 35px;
+  justify-self: end;
+}
+
+/* ковер */
+.cover {
+  position: relative;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 165px 50px 50px 50px;
+  height: 757px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover__title {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.3em;
+}
+
+.no-letter-spacing {
+}
+
+.aligned-text {
+  display: block;
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+  transform: translate(15px, 15px);
+}
+
+.aligned-text_right {
+  text-align: right;
+  transform: translate(30px, 30px);
+}
+
+.cover__description {
+  display: flex;
+  font-weight: 400;
+  margin-top: auto;
+
+  z-index: 2;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  color: white;
+  word-spacing: 18px;
+
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 22px;
+  width: 256px;
+  height: 51px;
+}
+
+/* lots */
+.lots {
+  display: flex;
+  flex-direction: column;
+  min-height: 723px;
+  margin: 180px 24px 0px 24px;
+}
+
+.lots__card-list li,
+.lots__card-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 27px;
+  gap: 25px 0px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 48px 40px;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.card__title {
+  z-index: 2;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.card__text {
+  z-index: 2;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.lots__look-more-link {
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  margin-top: 30px;
+}
+
+.about {
+  display: grid;
+  margin: 120px 24px 0px 24px;
+  height: 595px;
+  grid-template-columns: 334px 1fr;
+}
+
+.about__column:first-child {
+}
+
+.about__logo {
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto 0px auto;
+}
+
+.about__logo-image {
+  height: 114px;
+}
+
+.about__column:last-child {
+  padding: 133px 0px 13px 25px;
+}
+
+.about__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 0 0 100px 0;
+}
+
+.about__text {
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about__text p {
+  margin: 0;
+}
+
+.about__text p:first-child {
+  margin-bottom: 24px;
+}
+
+/* */
+.footer {
+  margin: 180px 0px 0px 0px;
+  min-height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 0px;
+  padding: 0px 50px 0px 50px;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu-list-item {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+}
+
+.footer__address-link_active {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+}
+
+.footer__social-list-item {
+}
+
+.footer__social-link {
+}
+
+.footer__social-icon {
+  height: 48px;
+}
